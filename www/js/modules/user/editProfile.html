@@ -1,0 +1,43 @@
+<ion-content>
+    <ion-list>
+
+
+
+<div ng-swipe-right="lc.toggleLeft();" ng-swipe-left="lc.toggleLeft();">
+    <div class="border-down padding-top">
+                <h3 class="subHead color-primary padding-horizontal">Edit Profile</h3>
+            </div>
+    <form class="list list-inset registerForm margin-0 padding-10" name="form" ng-submit="uc.editProfile(form);" novalidate>
+
+        <div class="row padding-0 margin-vertical-5">
+            <label class="item item-input col margin-vertical-5">
+                <input value="{{uc.data.personalText}}" ng-model="uc.data.personalText" type="text" placeholder="Personal Text" />
+            </label>
+        </div>
+
+        <div class="row padding-0 margin-vertical-5">
+            <label class="item item-input col margin-vertical-5">
+                <input value="" ng-model="uc.data.phoneno" type="text" placeholder="Change phone number" required ng-pattern="/^(\d)+$/" minlength="8" maxlength="20" />
+            </label>
+        </div>
+
+        <div class="row padding-0 margin-vertical-5">
+            <label class="item item-input col margin-vertical-5">
+                <input value="{{uc.data.location}}" ng-model="uc.data.location" type="text" placeholder="Give location" />
+            </label>
+        </div>
+
+        <div class="row padding-0 margin-vertical-5">
+            <button class="button button-block button-positive" type="submit" ng-disabled="form.$invalid || !form.$dirty">
+                Save
+            </button>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+    </ion-list>
+</ion-content>

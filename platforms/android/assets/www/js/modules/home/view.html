@@ -1,0 +1,69 @@
+<ion-side-menus class="stable-bg" drag-content="false" scroll="false">
+    <ion-side-menu-content ng-swipe-right="lc.toggleLeft();" ng-swipe-left="lc.toggleLeft();">
+        <ion-nav-bar class="bar-royal nav-title-slide-ios7 text-center bar-royal"></ion-nav-bar>
+        <ion-nav-view ng-swipe-right="lc.toggleLeft();" ng-swipe-left="lc.toggleLeft();" class="has-header" animation="slide-left-right"></ion-nav-view>
+        <div class="black-bg" vertical-align="center"></div>
+
+<div class="iframeScroll">
+        <iframe ng-src="{{lc.ifUrl}}" id="boxHeight" vertical-align="center-box" class="width100 iframe globalIframe scroll" frameborder="0" ng-hide="!lc.iframe">
+        </iframe>
+</div>
+
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left" expose-aside-when="large">
+        <header class="bar bar-header bar-positive">
+        </header>
+        <ion-content class="has-header">
+            <ion-list class="ios-list-margin">
+                <ion-item nav-clear menu-close href="#/home/root">
+                    Home
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/home/about-us">
+                    About
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/home/news">
+                    News
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/home/article">
+                    Articles
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/home/forumCat">
+                    Discussion Forum
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/home/directory">
+                    Directory
+                </ion-item>
+                <ion-item nav-clear menu-close ng-click="lc.restrict('fb')" href="#" onclick="return false;">
+                    F&B Startup Kit
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/home/contactUs">
+                    Contact Us
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/home/searchcat">
+                    Search
+                </ion-item>
+                <ion-item nav-clear menu-close href="{{lc.userUrl}}">
+                    {{lc.loginStatus}}
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
+
+
+<a class="global-sprites button-iframeclose" ng-click="lc.toggleIframe();" ng-if="lc.iframe"></a>
+
+<button class="global-sprites button button-clear leftMenuToggle" ng-click="lc.toggleLeft();" menu-toggle="left">
+
+</button>
+
+<h1 class="title navHeading head" ng-if="lc.titleShow" ng-show="!lc.root" ng-bind="lc.title"></h1>
+
+<div class="button-energized menuBorderHider"></div>
+
+<a class="global-sprites button-back" ng-click="lc.myGoBack();" menu-toggle="left" ng-show="lc.back"></a>
+
+<img ng-show="lc.root" class="navLogo" src="img/ras-app-image/Logo & navi-icon/logo.png" alt=""/>
+
+<img src="img/ras-app-image/home/intruction-screen.png" alt="" ng-if="lc.tut" id="is" ng-click="lc.tut = false;" class="posAbsolute top0 width100 zi1" />

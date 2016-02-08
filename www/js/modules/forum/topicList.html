@@ -1,0 +1,31 @@
+
+<ion-content class="forumTopicList">
+    <ion-list class="padding-vertical margin-vertical-10">
+
+        <div class="border-down padding-top">
+            <h3 class="subHead color-primary padding-horizontal" ng-bind="tc.title"></h3>
+        </div>
+
+        <div class="border-down display-block color-text" ng-if="!tc.error" ng-repeat="item in tc.subCategoryList">
+
+            <div class="row">
+                <div class="col">
+                    <div ng-click="tc.accessDetail(item.topic_id,item.subject)" title="{{item.subject}}" style="padding: 0px; text-decoration: none; ">
+                        <h4 class="color-primary subHead" ng-bind="item.subject"></h4>
+                    </div>
+                    <p ng-bind="item.first_post_message"></p>
+                </div>
+            </div>
+            <div class="row padding-vertical">
+                <div class="col-100 margin-horizontal-5">
+                    <span ng-if="item.last_post_guest_name">Last post by </span><span ng-bind="item.last_post_guest_name" class="color-primary"></span>
+                    <span ng-bind="item.last_post_time"></span>
+                </div>
+            </div>
+        </div>
+        <div ng-if="tc.error">
+          'Data not available in selected category!'
+        </div>
+
+    </ion-list>
+</ion-content>

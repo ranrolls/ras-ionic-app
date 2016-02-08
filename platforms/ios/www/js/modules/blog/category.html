@@ -1,0 +1,25 @@
+<div class="row directoryCategory">
+    <ion-content class="col padding-10">
+        <ion-list class="margin-vertical-10 list list-inset">
+
+            <div class="list" ng-if="!dc.error">
+
+                <a class="item item-icon-left item-text-wrap col-95 col-offset-5" ng-repeat="item in dc.categoryData" repeat-href repeat-href-value="{{item.id}}" repeat-href-prefix="#/home/blogl/" style="padding-left: 25px;">
+                    <!--
+                        <img class="width100" src="img/ras-app-image/latest-news/1.png" alt=""/>
+                    -->
+                    <span class="smallText">
+                        <i class="icon ion-chevron-right"></i>
+                    </span>
+                    {{item.name}}
+                </a>
+
+            </div>
+            <div class="list" ng-if="dc.error">
+                No category found!
+            </div>   
+
+
+        </ion-list>
+    </ion-content>
+</div>

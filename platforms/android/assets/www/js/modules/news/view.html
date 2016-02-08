@@ -1,0 +1,35 @@
+<ion-content>
+    <ion-list ng-class="{'margin-vertical-10' : !nc.showFetcher}">
+        <div class="row news-list list">
+            <div id="scrollList" class="list col" delegate-handle="mainScroll">
+
+                <a id="{{'item-'+$index}}"
+                    class="item item-text-wrap item-thumbnail-left col-100 news-item" ng-repeat="item in nc.news track by $index" repeat-href repeat-href-value="{{item.cid}}" repeat-href-prefix="#/home/newsd/">
+                    <img ng-src="{{item.urlb}}"
+                         class="width100"
+                          alt="" />
+                    <div class="row">
+                        <span class="col-100 line-height-20  bold color-primary fontSize20" ng-bind="item.title_short"></span>
+                    </div>
+                    <div class="row"><span class="col-100 line-height-20 margin-vertical-15 list-text fontSize16" ng-bind="item.introtext_short"></span></div>
+                    <div class="readMore">
+                        <div class="row">
+                            <span class="icon ion-ios-clock-outline margin-0 "></span>
+                            <span class="col-90 fontSize12 dateCreated margin-horizontal-5" ng-bind="item.created"></span>
+                        </div>
+                    </div>
+                </a>
+
+                <ion-infinite-scroll
+                    ng-if="nc.showFetcher"
+                    ng-hide=""
+                    on-infinite="nc.loadMore()"
+                    distance="30%">
+                </ion-infinite-scroll>
+
+            </div>
+        </div>
+    </ion-list>
+
+
+</ion-content>

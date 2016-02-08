@@ -1,0 +1,19 @@
+<ion-view class="stable-bg">
+    <div class="bar bar-header bar-positive">
+        <h1 class="title">User Login</h1>
+    </div>
+    <ion-content class="has-header">
+        <div class="list list-inset">
+            <label class="item item-input">
+                <input value="" ng-model="lc.un" type="text" placeholder="First Name">
+            </label>
+            <label class="item item-input">
+                <input value="" ng-model="lc.p" type="text" placeholder="password">
+            </label>
+            <button class="button button-block button-positive" ng-click="lc.login()">
+                Login!
+            </button>
+            <button class="button button-block button-positive" ui-sref="register.user">Click here if you are new user</button>
+        </div>
+    </ion-content>
+</ion-view>

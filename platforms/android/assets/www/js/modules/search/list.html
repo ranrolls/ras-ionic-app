@@ -1,0 +1,17 @@
+
+<ion-content>
+    <ion-list class="padding-vertical margin-vertical-10">
+        <div class="padding-bottom-30 ios-list-margin">
+             <div ng-swipe-right="lc.toggleLeft();" ng-swipe-left="lc.toggleLeft();"
+                class="border-down display-block color-text padding-10 margin-vertical-10 fontSize12"
+                ng-repeat="item in sl.listData" ng-if="!sl.error"
+                ng-click="sl.item({{item.id}},'{{item.title}}')">
+
+                <h4 class="color-primary bold fontSize20" ng-bind="item.title"></h4>
+                <p ng-bind="item.introtext_short" class="fontSize16"></p>
+
+              </div>
+            <p class="color-energize row" ng-if="sl.error">No data available for this keyword in this category</p>
+        </div>
+      </ion-list>
+      </ion-content>

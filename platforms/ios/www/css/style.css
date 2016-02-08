@@ -1,0 +1,393 @@
+/*                  .platform-ios               */
+body.platform-ios .menuBorderHider{margin-top: -8px;height: 70px; background-color: rgba(0,0,0,0) !important;
+    background: -moz-linear-gradient(top,  rgba(43,77,118,1) 0%, rgba(43,77,118,1) 29%, rgba(225,0,0,1) 30%, rgba(225,0,0,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(43,77,118,1)), color-stop(29%,rgba(43,77,118,1)), color-stop(30%,rgba(225,0,0,1)), color-stop(100%,rgba(225,0,0,1)));
+    background: -webkit-linear-gradient(top,  rgba(43,77,118,1) 0%,rgba(43,77,118,1) 29%,rgba(225,0,0,1) 30%,rgba(225,0,0,1) 100%);
+    background: -o-linear-gradient(top,  rgba(43,77,118,1) 0%,rgba(43,77,118,1) 29%,rgba(225,0,0,1) 30%,rgba(225,0,0,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(43,77,118,1) 0%,rgba(43,77,118,1) 29%,rgba(225,0,0,1) 30%,rgba(225,0,0,1) 100%);
+    background: linear-gradient(to bottom,  rgba(43,77,118,1) 0%,rgba(43,77,118,1) 29%,rgba(225,0,0,1) 30%,rgba(225,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002b4d76', endColorstr='#e10000',GradientType=0 );
+
+}
+body.platform-ios ion-nav-view.has-header.view-container, body.platform-ios ion-content.has-header.scroll-content.ionic-scroll{
+    margin-top: 0px;  }
+body.platform-ios h1.navHeading{margin-top: 28px;}
+body.platform-ios > div.container{ margin-top: 8px; }
+body.platform-ios > div.container > div > button, body.platform-ios > div.container > div > a{    top: 25px !important;    }
+    body.platform-ios > div.container > div > img{    top: 20px !important;    }
+body.platform-ios ion-side-menu-content.menu-content{ background: rgba(0,0,0,0) !important;margin-top: -0px;}
+body.platform-ios ion-side-menu{ background: rgba(0,0,0,0) !important; margin-top: -20px; }
+body.platform-ios ion-side-menu.menu-left{top: 30px;}
+body.platform-ios .ios-list-margin{margin-bottom: 50px !important;}
+body.platform-ios .ios-padding-top-10{padding-top: 10px !important;}
+
+body.platform-ios .fb div.row.fb-kit > div:nth-child(2){display: none;}
+
+
+/*
+body .menuBorderHider{margin-top: -8px;height: 70px; background-color: rgba(0,0,0,0) !important;
+    background: -moz-linear-gradient(top,  rgba(43,77,118,1) 0%, rgba(43,77,118,1) 29%, rgba(225,0,0,1) 30%, rgba(225,0,0,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(43,77,118,1)), color-stop(29%,rgba(43,77,118,1)), color-stop(30%,rgba(225,0,0,1)), color-stop(100%,rgba(225,0,0,1)));
+    background: -webkit-linear-gradient(top,  rgba(43,77,118,1) 0%,rgba(43,77,118,1) 29%,rgba(225,0,0,1) 30%,rgba(225,0,0,1) 100%);
+    background: -o-linear-gradient(top,  rgba(43,77,118,1) 0%,rgba(43,77,118,1) 29%,rgba(225,0,0,1) 30%,rgba(225,0,0,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(43,77,118,1) 0%,rgba(43,77,118,1) 29%,rgba(225,0,0,1) 30%,rgba(225,0,0,1) 100%);
+    background: linear-gradient(to bottom,  rgba(43,77,118,1) 0%,rgba(43,77,118,1) 29%,rgba(225,0,0,1) 30%,rgba(225,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002b4d76', endColorstr='#e10000',GradientType=0 );
+
+}
+body ion-nav-view.has-header.view-container, body.platform-ios ion-content.has-header.scroll-content.ionic-scroll{
+    margin-top: 0px;  }
+bodys h1.navHeading{margin-top: 28px;}
+body > div.container{ margin-top: 8px; }
+body > div.container > div > button, body.platform-ios > div.container > div > a{    top: 25px !important;    }
+    body > div.container > div > img{    top: 20px !important;    }
+body ion-side-menu-content.menu-content{ background: rgba(0,0,0,0) !important;margin-top: -0px;}
+body ion-side-menu{ background: rgba(0,0,0,0) !important; margin-top: -20px; }
+body ion-side-menu.menu-left{top: 30px;}
+
+*/
+
+
+
+
+/*            search           */
+
+.colorGray{color: rgba(0, 0, 0, 0.5) !important;}
+.searchcat-list > div.list{ margin-left: 10px;margin-right: 10px;}
+.margin-left-10{margin-left: 10px;}
+.margin-left-20{margin-left: 20px;}
+
+
+/*              in app browser              */
+
+.inAppBrowserWrap {
+   margin-top: 50px;
+   background-color: rgba(0,0,0,0.75);
+   color: rgba(235,235,235,1.0);
+}
+
+/*          f & b                   */
+.margin-left--3{ margin-left: -3%; }
+.fb-download{ position: absolute; top: 20%; right: 10px; }
+.fb ion-list.margin-vertical-10 .list > div:last-child{ padding-bottom: 5px;}
+.fb .margin-bottom-10{ margin-bottom: 10px; }
+.fb div.row.fb-kit > div:first-child{ float: left; width: 100%; }
+.fb div.row.fb-kit > div:first-child img{  width: 100%; }
+.fb div.row.fb-kit > div:nth-child(2){ margin-left: -100%; width:100%; }
+.fb .index{position: absolute; top: 15px; }
+.fb .list-text{ margin-left: 10%; }
+/*body.platform-ios .fb div.row.fb-kit > div:nth-child(2){ padding-left: 10px; }*/
+
+/*          aboutUsItem             */
+.div-image-100 img{ width: 100%; }
+#input .about_bg{ background: #2b4d76; margin-bottom: 10px; margin-top: -10px; text-align: center; padding: 10px 5px; color: white; }
+.aboutUsItem{ margin-bottom: 20px; }
+.aboutUsItem .item{ box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; padding: 0px !important;  }
+.aboutUsItem .item img.row.width-100{ padding: 0px !important; margin: 0px !important; }
+.aboutUsItem .border-down{ border-bottom: 5px solid #2b4d76; margin-right: 1px;}
+.aboutUsItem .color-energized{ color:#fa6c25; }
+/*          forumTopicReply         */
+.forumTopicReply .padding-5{ padding: 5px !important; }
+
+/*          forumTopicList          */
+.forumTopicList .button-light {
+   background-color: rgba(0,0,0,0) !important;
+}
+.forumTopicList a.border-down:last-child{
+   border-width: 0px;
+}
+image#two{
+   background: white;
+}
+.forumTopicList .border{border: 1px solid #ccc;  padding-top: 5px; }
+
+/*          blog details            */
+.blogForm {  }
+.blogForm input{ padding-left: 10px; padding-right: 10px; }
+
+/*          blog-list               */
+.blog-list{  }
+.blog-list h3.bold{ line-height: 13px; }
+
+/*          directoryCategory        */
+.directoryCategory .item-icon-right .icon::before{ font-size: 15px; }
+.directoryCategory .ion-chevron-right::before{ font-size: 10px; color: #ccc; }
+.directoryCategory .border-top{ border-top: 1px solid #f3efe5; padding-top:3px; }
+.directoryCategory ion-item.active{ background: #2b4d76; color:white; }
+.directoryCategory .thumb-div{ max-width: 20px; }
+.directoryCategory .left-img{
+   background: #f3efe5; margin-right: 10px; box-shadow: 2px 2px 2px #ccc;
+   padding-left:7px; padding-right: 6px; padding-top: 3px; padding-bottom: 3px;
+}
+.directoryCategory .item-accordion{ line-height: 30px; padding-left: 30px !important; }
+.directoryCategory .item{ padding: 20px; }
+.directoryCategory span.smallText i.icon{ font-size: 15px; left: 0px; }
+.directoryViewList{ margin-bottom: 30px !important; padding-bottom:30px;  }
+
+
+/*          news list page          */
+.news-list .absolute{ position:absolute; right: 10px; bottom: 5px; }
+.news-list .hide{ display: none; }
+.news-list a.item{ margin-bottom: 15px; margin-top: 3px; border-bottom-width: 5px; border-bottom-color: #ccc; }
+/*.news-list a.item .readMore{ margin-top: 10px; }*/
+.news-list .item{
+   padding: 5px;
+   background-image: url('../img/ras-app-image/pagination/load.gif') !important;
+   background-repeat: no-repeat !important;
+   background-position: 50px 40px;
+}
+.news-list .item-thumbnail-left{ padding-left: 90px; }
+.news-list .dateCreated{ padding: 3px 0px 0px 5px; }
+.news-list .item-thumbnail-left .list-text{ font-size: 14px; }
+.news-list .item-thumbnail-left > img{
+/*    box-shadow: -3px -6px 3px #ddd;  left: 12px; */
+   /*    top: 22px; */ top: 15px;
+
+}
+.listLeftImage{
+ background-size: contain;
+ background-repeat: no-repeat;
+ min-height: 72px;
+ display: inline;
+ min-width: 117px;
+ position: absolute;
+ left: 5px;
+ top: 10px;
+}
+.user-profile.row3{ margin-top: 20px; }
+.user-profile .user-image-box{ width:90%; margin: 0 auto; max-height: 100px;
+    background-color: #2b4d76; overflow: hidden;
+    background-size: contain; background-position: center center;
+}
+
+.user-profile .profile-image{ width: 100%; margin: 0 auto; max-height: 150px; }
+
+.user-profile .global-sprites{ width: 50px; height: 50px; background-size: 70px; }
+.user-profile .global-sprites.editImg{ width: 100%; background-position: -6px -3121px;
+    height: 30px; padding-left: 30px; margin-top: 5px !important;
+    padding-bottom: 0px; line-height: 20px !important; padding-top: 0px;
+}
+.user-profile .global-sprites.name{ background-position: -6px -2762px; }
+.user-profile .global-sprites.email{ background-position: -6px -2832px; }
+.user-profile .global-sprites.phone{ background-position: -6px -2902px; }
+.user-profile .global-sprites.location{ background-position: -6px -2972px; }
+.user-profile .global-sprites.personal{ background-position: -6px -3042px; }
+
+.user-profile .list > div:last-child{ margin: 0px !important; padding-bottom: 0px !important; }
+.user-profile .label{ font-size: 12px; font-weight: normal;}
+/*        directory      */
+.directoryCategory .thumb-div{max-width: 20px;}
+
+
+
+
+/*          article listing         */
+#contentDiv ion-list{ z-index: 1; }
+#contentDiv .paginationBox{ z-index: 10; }
+.paginationLoader img, .paginationImage{
+    margin-right: 30px; margin-top: 10px;
+    max-width: 15px; transition: all 0.7s;
+}
+.paginationBox{ box-shadow: 0px 1px 1px inset;
+    position: absolute; border-top: 1px solid #2b4d76;
+    bottom: 0px; min-height: 100px; text-align: center;
+    background-color: rgb(244, 239, 227);
+}
+.paginationBox ion-spinner{
+    height:40px; padding:15px;
+    margin-right: 30px; margin-top: 40px;
+}
+.paginationBox > div{ height: 100px; margin-top:10px;}
+span.paginationMessage{ margin-top: 15px; height: 30px; }
+.article-thumb{ max-width: 35px; padding-top: 5px; }
+.articleList .color-text{ line-height: 20px;  }
+
+.articleList a.width100{ text-decoration: none; color: inherit; }
+
+.articleList a.item > *{ padding-left: 0px; padding-right: 0px; }
+.articleList a.item .dateCreated{ padding: 3px 0px 0px 5px; }
+/*          forum listing       */
+
+.forumList .item{ background: rgb(243, 239, 229) none repeat scroll 0% 0%; padding:0px; }
+.forumList .edit{ max-width: 20px; }
+.forumList .firstRow{ line-height: 13px; font-size:12px; }
+.forumList .thumb-div,.forumList .border-left{
+    border-left-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+}
+.forumList .thumb-div,.forumList .border-right{
+    border-right-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+}
+.forumList .secondRow{
+    padding: 5px 0px !important; margin: 5px 0px;
+}
+.forumList .secondRow .text-center{ line-height: 10px; }
+
+/* update Page */
+.profile-image{ box-shadow: 3px 3px 3px rgb(204, 204, 204) inset; padding-top: 3px; }
+
+/*   forms    */
+.form-table tr td{ padding: 5px 0px !important; }
+.loginForm .item, .registerForm .item{ margin: 3px 0px; }
+.loginForm .item input[type="text"], .loginForm .item input[type="password"], .loginForm .item input[type="email"]{
+    padding-left: 5px; background-repeat: no-repeat; padding-right: 0px;
+    background-position: 10px center; background-size: 25px;
+}
+.loginForm .item input[placeholder="Username"]{
+}
+.loginForm .item input[placeholder="Password"]{
+}
+
+/* starters */
+@font-face {
+    font-family: 'kgblank';
+    src: url('../fonts/KGBlankSpaceSketch.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+    font-family: 'slabthing';
+    src: url('../fonts/SlabThing.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+/*      .contact-form       */
+
+.contact-form iframe .gmnoprint,
+.contact-form iframe .gmnoprint,
+.contact-form iframe .gm-style-cc, .contact-form iframe .place-card
+{ display: none !important; }
+
+.contact-form input{ margin:3px 0px; }
+.contact-form textarea{ min-height: 70px; width:100% !important;  margin-top:4px;  }
+.contact-form button{ margin-top: 5px; }
+.contact-icon{
+    min-width: 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60%;
+}
+.contact-icon.location{
+    background-position: 3px 715px !important; background-size: 40px !important; overflow: hidden;
+}
+.contact-icon.phone{
+    background-position: 2px 785px !important; background-size: 40px !important; overflow: hidden;
+}
+
+/*          body.menu-open      */
+body.menu-open ion-nav-view.has-header{  }
+body.menu-open .black-bg{
+    background: rgba(0,0,0,0.5); z-index: 10; position: absolute; width:100%;
+}
+
+/*      top nav-bar   */
+ion-header-bar.disable-user-behavior{display: none !important;}
+ion-side-menu header.bar-positive{display: none !important;}
+.menuBorderHider{ position: fixed; width: 100%; height: 44px; z-index: 1; }
+
+.menu-animated{ box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0) !important; }
+.navLogo{ position:fixed; left: 50px; top:0px; max-width: 180px; z-index: 2;}
+.navHeading{ position: fixed; color: white; left: 14%; z-index: 20; padding-top: 0px; font-size: 25px;
+    text-align: left; width: 76%; margin-top: 9px;
+}
+.leftMenuToggle{ position: fixed; color: white; z-index: 2; max-width: 28px; left: 0px; top: 2px; padding:0px; margin:0px;}
+.button-back{
+    background-position: 10px -1780px !important; background-size: 55px !important; width: 50px; height: 50px;
+    position: fixed; color: white; z-index: 2;  right: 0px; top: 4px; padding:0px; margin:0px;}
+.button-back img{ max-width: 25px; }
+.leftMenuToggle{
+    background-position: 10px -1617px !important; background-size: 55px !important;
+    width: 50px; height: 50px; }
+.leftMenuToggle img{  max-width: 25px; }
+.leftMenuToggle:hover{ color:white; }
+
+ion-nav-bar.nav-bar-container button, ion-nav-bar.nav-bar-container img{ z-index: 22; }
+ion-side-menu ion-list ion-item a{
+    color: #2b4d76 !important; background-repeat: no-repeat !important; font-family: 'kgblank';
+    padding-left: 50px !important; background-size: 50px !important;
+    background: url('../img/ras-app-image/sprites-sheet.png') 10px -10px;
+}
+ion-side-menu ion-list ion-item:first-child{ border: 0px;
+}
+ion-side-menu ion-list ion-item:nth-child(1) a{ margin-top: 20px !important;
+                                                background-position: 10px -1362px;  }
+ion-side-menu ion-list ion-item:nth-child(2) a{ background-position: 10px -709px;  }
+ion-side-menu ion-list ion-item:nth-child(3) a{ background-position: 10px -461px;  }
+ion-side-menu ion-list ion-item:nth-child(4) a{ background-position: 10px -409px;  }
+ion-side-menu ion-list ion-item:nth-child(5) a{ background-position: 10px -11px;  }
+ion-side-menu ion-list ion-item:nth-child(6) a{ background-position: 10px -511px;  }
+ion-side-menu ion-list ion-item:nth-child(7) a{ background-position: 10px -562px;  }
+ion-side-menu ion-list ion-item:nth-child(8) a{ background-position: 10px -610px;  }
+ion-side-menu ion-list ion-item:nth-child(9) a{ background-position: 10px -2262px;  }
+ion-side-menu ion-list ion-item:nth-child(10) a{ background-position: 10px -663px;  }
+ion-side-menu-content ion-nav-bar.bar-positive{   }
+ion-side-menu-content ion-nav-bar.bar-positive .button-clear{
+}
+/*.list{ padding-bottom: 25px !important; }*/
+div.nav-bar-block[nav-bar="active"] ion-header-bar.bar-positive{
+    position: fixed; top: 0px;
+}
+ion-side-menu.menu-left ion-content.has-header, ion-side-menu.menu-left ion-content.has-header div.list, ion-side-menus.stable-bg{
+    border-right-width: 0px !important;
+}
+
+
+
+/*          home.root     &&        iframe  */
+.iframeScroll{  overflow: scroll;  }
+.iframe{
+    border:0; margin: 0px; margin-top: 44px; background-color: #e10000;
+    position:absolute; z-index: 4;  padding:0px; top: 0px; overflow: scroll;
+     /*min-height: 480px;*/
+}
+.iframe *{ overflow: scroll; }
+body.platform-ios .iframe{ margin-top: 70px; }
+.button-iframeclose{
+    background-position: 10px -2660px !important; background-size: 55px !important; width: 45px; height: 50px;
+    position: fixed; color: white; z-index: 5;  right: 5px; top: 3px; padding:0px; margin:0px;
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#is{ top: 0px !important; z-index: 2;}
+
+/*      globals         */
+
+html *{text-align: justify;}
+
+
+
+/*
+
+Color code
+
+red-#e10000
+[10:44:12 AM] Atiqur Rahman: r-225
+[10:44:30 AM] Atiqur Rahman: r-25,0,0
+[10:44:45 AM] Atiqur Rahman: rgb-225.0.0
+[10:45:00 AM] Ranjan Sharma: red = #e10000    rgb(225,0,0)
+manish blue color 2b4d76
+[10:45:35 AM] Atiqur Rahman: blue = #2a4c75
+[10:45:56 AM] Atiqur Rahman: rgb 42.76.117
+
+
+[5:44:22 PM] Sanjeev Kumar: Header: #e10000
+[5:44:47 PM | Edited 5:45:48 PM] Sanjeev Kumar: rgb 250,190,38
+[5:46:04 PM] Sanjeev Kumar: button: #2b4d76
+[5:46:29 PM] Sanjeev Kumar: rgb 42,76,117
+BG: #f4efe3
+[5:47:17 PM] Sanjeev Kumar: rgb 244,239,227
+
+*/

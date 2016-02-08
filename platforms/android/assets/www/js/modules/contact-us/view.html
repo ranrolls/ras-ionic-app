@@ -1,0 +1,38 @@
+
+
+<ion-content>
+    <ion-list class="padding-vertical margin-vertical-10 ios-padding-top-10">
+
+        <form class="list list-inset contact-form margin-0 padding-horizontal ios-padding-top-10" name="form" ng-submit="cc.formSubmit(form);" novalidate ng-init="form.$setPristine();">
+            <div class="row margin-vertical-5 padding-0">
+                <label class="item item-input col">
+                    <input ng-model="cc.f.name" placeholder="Name" ng-pattern="/^(\D)+$/" type="text" id="name" value="name" name="name" class="inputtext col" required minlength="3" />
+                </label>
+            </div>
+            <div class="row margin-vertical-5 padding-0">
+                <label class="item item-input col">
+                    <input ng-model="cc.f.email" placeholder="Email" type="email" id="email" value="e@e.in" name="email" class="inputtext col" required minlength="6" />
+                </label>
+            </div>
+            <div class="row margin-vertical-5 padding-0">
+                <label class="item item-input col">
+                    <input ng-model="cc.f.subject" placeholder="Subject" type="text" id="subject" value="subject" name="subject" class="inputtext col" required minlength="3" />
+                </label>
+            </div>
+            <div class="row margin-vertical-5 padding-0">
+                <label class="item item-input col">
+                    <textarea ng-model="cc.f.message" placeholder="Message" type="textarea" rows="3" value="message" id="message" name="message" class="inputtext width-100" required ></textarea>
+                </label>
+            </div>
+            <div class="row margin-vertical-5 padding-0">
+                    <button class="button button-block button-positive width-100" type="submit" ng-disabled="form.$invalid || !form.$dirty">
+                        Send Message
+                    </button>
+            </div>
+        </form>
+        <iframe class="width100 padding-10" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8191706716966!2d103.8216645!3d1.2822874999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1bd62a78250b%3A0x2969db820ee3e66!2s2985+Jalan+Bukit+Merah%2C+Singapore+159457!5e0!3m2!1sen!2sin!4v1436590569605" frameborder="0" style="border:0"></iframe>
+
+
+
+    </ion-list>
+</ion-content>

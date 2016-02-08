@@ -1,0 +1,35 @@
+<ion-content>
+    <ion-list class="padding-vertical margin-vertical-10">
+        <div class="border-down padding-top">
+            <h3 class="subHead color-primary padding-horizontal" ng-bind="rc.title"></h3>
+        </div>
+
+        <div class="border-down display-block color-text"
+             ng-if="!rc.error"
+             ng-repeat="item in rc.subCategoryList"
+             style="padding: 0px; text-decoration: none; ">
+            <div class="row">
+                <div class="col">
+                    <h4 class="color-primary bold" ng-bind="item.subject"></h4>
+                    <p ng-bind="item.message"></p>
+                </div>
+            </div>
+            <div class="row padding-vertical">
+                <div class="col-100 padding-horizontal">
+                    <span ng-if="item.name">Last post by </span><span ng-bind="item.name" class="color-primary"></span>
+                    <span ng-bind="item.time"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row" ng-if="rc.error">
+            Be the first one to reply.
+        </div>
+        <div class="row margin-vertical-10" ng-if="rc.us">
+            <a class="col text-center button button-block button-positive bold"
+               ng-href="#/home/forumTopicR/{{rc.title}}">
+                Reply Topic
+            </a>
+        </div>
+
+    </ion-list>
+</ion-content>

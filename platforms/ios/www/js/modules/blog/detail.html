@@ -1,0 +1,91 @@
+<ion-content>
+    <ion-list>
+        <!--
+                <img class="width100" src="img/ras-app-image/news-detail/1.png" alt=""/>
+        -->        
+        <img class="width100" ng-src="{{bc.currentItem.image}}" alt=""/>
+        <div class="row">
+            <div class="col">
+                <p class="smallText ">
+                    <i class="icon ion-person color-primary"></i>By <span class="color-energized">Super User</span> <span class="icon ion-ios-calendar-outline color-primary"></span> 
+                    <span class="subHead color-primary bold" ng-bind="bc.currentItem.created">
+                        <!--
+                            11 April 2015
+                        -->    
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <span class="subHead color-primary bold" ng-bind="bc.currentItem.title">
+                    <!--
+                    The lorem Ipsum lorem Ipsum The lorem Ipsum The lorem Ipsum
+                    -->
+                </span><br />
+            </div>
+        </div>
+        <div class="row color-text" ng-bind="bc.currentItem.introtext">
+            <!--
+            The lorem ipsum The lorem ipsum The lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem 
+            -->
+        </div>
+        <div class="row">
+            <div class="col color-primary bold" ng-click="bc.fetchCategoryListItemComments(bc.currentItem.cid);" style="cursor: pointer;">
+                <span ng-if="bc.currentItem.no_comment > 0">Click here to read </span> 
+                <span ng-bind="bc.currentItem.no_comment"></span> Comments
+            </div>
+        </div>
+
+
+        <ion-list ng-if="bc.comments">
+            <div class="row news-list">
+                <div class="width-100">
+                    <a class="item item-thumbnail-left item-text-wrap col-95 col-offset-5" ng-repeat="item in bc.commentsData">
+                        <!--
+                        <img class="width100" ng-src="{{item.image}}" alt="{{item.title}}"/>
+                        -->
+                        
+                        <img class="width100" src="img/ras-app-image/blog/post-by.png" alt="{{item.commentText}}"/>
+                        <h3 class="col color-primary padding-0 bold" ng-bind="item.commentText">
+                            <!--
+                                Lorem ipsum ! Lorem ipsum ! t g Lorem ipsum
+                            -->
+                        </h3>
+                        <div class="smallText padding-vertical">
+                            <!--
+                            <i class="icon ion-person color-primary"></i>
+                            -->
+                            By <span class="color-energized" ng-bind="item.userName">Super User</span> <i class="icon color-primary ion-ios-calendar-outline"></i> 
+                            <span ng-bind="item.commentDate">
+                                <!--
+                                    11 April 2015
+                                -->
+                            </span><br />
+                            <!--
+                            <span>Read More</span>
+                            -->
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </ion-list>
+
+
+        <div class="row">
+            <form class="col padding-vertical blogForm" name="form" ng-submit="bc.addComment(form, bc.currentItem.cid);" novalidate>
+                <span class="color-primary bold">Write your comments</span>
+                <input class="width-100 margin-vertical-5 padding-horizontal" ng-model="bc.add.userName" type="text" name="userName" placeholder="Your Name" required minlength="6" />
+                <input class="width-100 margin-vertical-5 padding-horizontal" ng-model="bc.add.commentEmail" type="email" name="commentEmail" placeholder="Email id" required minlength="6" />
+                <textarea class="width-100 margin-vertical-5 padding-horizontal" ng-model="bc.add.commentText" type="text" name="commentText" placeholder="Comments" required minlength="6"></textarea>
+                <button class="button button-positive button-block color-white" type="submit" ng-disabled="form.$invalid || !form.$dirty">Submit</button>
+            </form>
+        </div>
+
+    </ion-list>
+</ion-content> 
+<!--
+<h1>news detail</h1>
+{{ nc.news | json }}
+<div ng-repeat="item in nc.news">{{item}}</div>
+-->

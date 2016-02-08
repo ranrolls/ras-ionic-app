@@ -1,0 +1,39 @@
+<ion-content ng-hide="cc.error">
+    <ion-list>
+        <div class="border-down padding-top">
+            <h3 class="subHead color-primary padding-horizontal">Discussion Forum List</h3>
+        </div>
+        <ion-list>
+            <div class="row articleList">
+                <div id="scrollList" class="list col">
+                    <!-- id="{{'item-'+$index}}" -->
+                    <div class="item item-text-wrap col-100 margin-vertical-10" style="color:#FF0000 !important; font-weight:500; background-color: rgba(0, 0, 0, 0.05);" >
+
+                        <div class="row">
+                            <div>
+                                Welcome to the discussion forum. If this is your first visit, be sure to read the
+                                <div class="inline color-primary" ng-click="cc.browse('http://www.rasmentorshipforum.com/guide-line')">
+                                    <strong>Guideline</strong>
+                                </div>
+                                first. You will need to
+                                <a href="#/home/register" class="inline no-underline color-primary" target="_new"><strong>Register</strong></a>
+                                before you can read and post in the discussion forum. To start viewing the ongoing discussion,
+                                select the discussion area that you want to visit from the categories below.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ion-list>
+        <div class="padding-bottom-30">
+            <a ng-swipe-right="lc.toggleLeft();" ng-swipe-left="lc.toggleLeft();"
+               class="border-down display-block color-text padding-10 margin-vertical-10 fontSize12"
+               ng-if="!cc.error" ng-repeat="item in cc.categoryData"
+               repeat-href repeat-href-value="{{item.id}}"
+               repeat-href-prefix="#/home/forumSubCat/"
+               style="text-decoration: none; ">
+                <h4 class="color-primary subHead fontSize20" ng-bind="item.name"></h4>
+            </a>
+        </div>
+    </ion-list>
+</ion-content>

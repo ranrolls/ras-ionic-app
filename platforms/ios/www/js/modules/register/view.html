@@ -1,0 +1,73 @@
+
+<ion-content>
+    <ion-list>
+        <div>
+            <div class="border-down padding-top">
+                <h3 class="subHead color-primary padding-horizontal">Register</h3>
+            </div>
+            <form class="list list-inset registerForm margin-0 padding-10 all-list-margin" name="form" ng-submit="rc.register(form);" novalidate>
+                <div class="row padding-0">
+                    <label class="item item-input col margin-vertical-5">
+                        <input value="123" ng-model="rc.u.name" type="text" placeholder="Name" ng-pattern="/^(\D)+$/" required>
+                    </label>
+                </div>
+
+                <div class="row padding-0">
+                    <label class="item item-input col margin-vertical-5">
+                        <input value="123" ng-model="rc.u.uname" type="text" placeholder="Username" required>
+                    </label>
+                </div>
+
+                <div class="row padding-0">
+                    <label class="item item-input col margin-vertical-5">
+                        <input value="123" ng-model="rc.u.email" placeholder="Email" required type="email">
+                    </label>
+                </div>
+
+                <div class="row padding-0">
+                    <label class="item item-input col margin-vertical-5">
+                        <input value="123" ng-model="rc.u.password" placeholder="Password" required type="password" minlength="4">
+                    </label>
+                </div>
+
+                <div class="row padding-0">
+                    <label class="item item-input col margin-vertical-5">
+                        <input value="123" ng-model="rc.u.cpassword" placeholder="Verify Password" password-match="rc.u.password" required type="password" minlength="4">
+                    </label>
+                </div>
+
+
+                <div class="row padding-0">
+                    <label class="item item-input col margin-vertical-5">
+                        <input value="IN" ng-model="rc.u.country" ng-pattern="/^(\D)+$/" placeholder="Country currently residing in" type="text" required>
+                    </label>
+                </div>
+
+
+                <div class="row padding-0">
+                    <label class="item item-input col margin-vertical-5">
+                        <input value="Refine" ng-model="rc.u.cmp" placeholder="Company" type="text" required>
+                    </label>
+                </div>
+                <div class="row padding-0">
+                    <label class="item item-input col margin-vertical-5">
+                        <input value="Refine" ng-model="rc.u.region" placeholder="Current Industry" type="text">
+                    </label>
+                </div>
+                <div class="row padding-0">
+                    <label class="col margin-vertical-5">
+                        <span class="color-energized">Note: </span>For those not currently in the F&B industry, please state current industry.
+                    </label>
+                </div>
+
+                <div class="row padding-0">
+                    <button class="button button-block button-positive" type="submit" ng-disabled="form.$invalid || !form.$dirty">
+                        Register
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+    </ion-list>
+</ion-content>

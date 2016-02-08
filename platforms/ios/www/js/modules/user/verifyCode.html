@@ -1,0 +1,38 @@
+<ion-content>
+    <ion-list>
+        <div>
+            <div class="border-down padding-top">
+                <h3 class="subHead color-primary padding-horizontal">Verify Code</h3>
+            </div>
+            <div class="list list-inset loginForm margin-0 padding-10">
+
+                <div class="row padding-0">
+                    <p class="col">
+                        An email has been sent to your email address. The email contains a verification code, please paste the verification code in the field below to prove that you are the owner of this account.
+                    </p>
+                </div>
+                <div class="row padding-0 margin-vertical-5">
+                    <label class="item item-input col">
+                        <input value="" ng-model="vc.un" type="text" placeholder="Username" minlength="6">
+                    </label>
+                </div>
+                <div class="row padding-0 margin-vertical-5">
+                    <label class="item item-input col">
+                        <input value="" ng-model="vc.t" type="text" placeholder="Type token in mail here" minlength="3">
+                    </label>
+                </div>
+                <div class="row padding-0 margin-vertical-5">
+                    <button class="button button-block button-positive" ng-click="vc.verifyCode()">
+                        Verify Code
+                    </button>
+                </div>
+                <!-- <div class="row padding-0">
+                    <div class="col">
+                        Not registered? <span ui-sref="home.register" class="extraBigLink color-primary" ui-sref="home.register">Sign up now!</span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+    </ion-list>
+</ion-content>

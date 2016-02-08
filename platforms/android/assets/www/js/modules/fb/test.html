@@ -1,0 +1,76 @@
+
+<ion-content>
+    <ion-list>
+        <div class="row padding-vertical margin-vertical-10">
+            <div class="col-100">
+                <input class="border-down width-100" ng-model="fbt.folder" 
+                       ng-bind="fbt.folder" type="text" />
+            </div>
+        </div>
+        
+        <div class="row padding-vertical margin-vertical-10">
+            <div class="col-100">
+                <input class="border-down width-100" ng-model="fbt.file" 
+                       ng-bind="fbt.file" type="text" />
+            </div>
+        </div>
+        
+        <div class="row padding-vertical">
+            <div class="col-100">
+                <input class="border-down width-100" ng-model="fbt.status" 
+                       ng-bind="fbt.status" type="text" />
+            </div>
+        </div>
+        
+        <div class="row padding-vertical">
+            <div class="col-100">
+                <input class="button button-small button-block button-stable" 
+                       value="Get File System" 
+                       ng-click="fbt.getFileSystem();" type="button" />
+            </div>
+        </div>
+        
+        <div class="row padding-vertical">
+            <div class="col-100">
+                <input class="button button-small button-block button-stable" 
+                       value="Check Download Folder" 
+                       ng-click="fbt.checkDownloadFolder();" type="button" />
+            </div>
+        </div>
+        
+        <div class="row padding-vertical">
+            <div class="col-100">
+                <input class="button button-small button-block button-stable" 
+                       value="Create Download Folder" 
+                       ng-click="fbt.createFbFolder();" type="button" />
+            </div>
+        </div>
+        
+        <div class="row padding-vertical">
+            <div class="col-100">
+                <input class="button button-small button-block button-stable" 
+                       value="Create Download Folder" 
+                       ng-click="fbt.checkDownloadFbFolder();" type="button" />
+            </div>
+        </div>
+        
+        <div class="row padding-vertical">
+            <div class="col-100">
+                <input class="button button-small button-block button-stable" 
+                       value="Download File" 
+                       ng-click="fbt.downloadFile();" type="button" />
+            </div>
+        </div>
+        
+        <div class="row padding-vertical">
+            <div class="col-100">
+                <input class="button button-small button-block button-stable" 
+                       value="Check File" 
+                       ng-click="fbt.checkFile();" type="button" />
+            </div>
+        </div>
+        
+    </ion-list>
+</ion-content>  
+
+

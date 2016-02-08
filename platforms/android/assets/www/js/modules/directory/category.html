@@ -1,0 +1,13 @@
+<div class="row directoryCategory">
+    <ion-content class="col padding-10">
+        <ion-list class="margin-vertical-10">
+            <div ng-repeat="group in cc.categoryData track by $index" class="margin-vertical-10">
+                <ion-item class="item-primary border-0 padding-vertical padding-vertical-20" ng-click="cc.redirectSubCatId(group.id,group.title);">
+                    <img class="thumb-div" ng-src="{{group.intro_image}}" alt="" />
+                    &nbsp;
+                    <span class="color-primary subHead fontSize22 fontWeight500">{{group.title}}</span>
+                </ion-item>
+            </div>
+        </ion-list>
+    </ion-content>
+</div>

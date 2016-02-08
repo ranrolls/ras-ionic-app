@@ -1,0 +1,23 @@
+
+<ion-content>
+    <ion-list class="">
+<div class="">
+        <div class="list list-inset">
+            <label class="item item-input">
+                <input value="" class="colorGray" ng-change="sc.updateCatList();" ng-model="sc.keyword" type="text"
+                       placeholder="Enter keyword">
+            </label>
+        </div>
+
+        <ion-list class="searchcat-list ios-list-margin" ng-hide="!sc.result">
+            <div ng-repeat="item in sc.catList" class="">
+                <ion-item class="item-primary border-down padding-vertical" ng-click="sc.redirectItem(item.id,item.title);">
+                    <span class="color-primary">{{sc.keyword}}</span>
+                    <br /><span class="margin-left-10"> in <span class="color-energized">{{item.title}}</span></span>
+                </ion-item>
+            </div>
+        </ion-list>
+
+</div>
+</ion-list>
+</ion-content>

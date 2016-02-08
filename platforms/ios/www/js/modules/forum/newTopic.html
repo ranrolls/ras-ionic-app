@@ -1,0 +1,40 @@
+
+<ion-content class="forumTopicList">
+    <ion-list>
+        <div class="border-down padding-top">
+            <h3 class="subHead color-primary padding-horizontal">Create Topic</h3>
+        </div>
+        <form class="list list-inset loginForm margin-0 padding-10" name="form" ng-submit="tc.createNewTopic(form);" novalidate>
+            <div class="row padding-0 margin-vertical-5">
+                <div class="col subHead color-primary">
+                    Subject
+                </div>
+            </div>
+
+            <div class="row padding-0 margin-vertical-5">
+                <div class="item item-input col">
+                    <input class="width-100 padding-5" ng-model="tc.subject" name="subject" type="text" required minlenght="3" />
+                </div>
+            </div>
+
+            <div class="row padding-0 margin-vertical-5">
+                <div class="col subHead color-primary">
+                    Message
+                </div>
+            </div>
+
+            <div class="row padding-0 margin-vertical-5">
+                <div class="item item-input col">
+                    <textarea rows="7" class="width-100 padding-5" ng-model="tc.message" type="text" name="message" required minlenght="6"></textarea>
+                </div>
+            </div>
+
+            <div class="row padding-0 margin-vertical-5">
+                <button class="col button button-block button-positive text-center" ng-disabled="form.$invalid || !form.$dirty" type="submit">
+                    Submit
+                </button>
+            </div>
+
+        </form>
+    </ion-list>
+</ion-content>

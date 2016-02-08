@@ -1,0 +1,10 @@
+
+
+
+       welcome hexa
+
+      Top- #f7f4ec
+
+       mid- #fffdf9
+
+      Bottom-#f7f4ec

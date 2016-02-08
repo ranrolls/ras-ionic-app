@@ -1,0 +1,28 @@
+
+<ion-content class="fb">
+    <ion-list ng-class="{'margin-vertical-10' : !ac.fetchOperation}">
+
+        <div class="row">
+            <div class="col-100 subHead color-primary" ng-bind="fb.full_title">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-100 color-text margin-vertical-10 fontSize16" parse-fb-html ng-bind="fb.introtext"></div>
+        </div>
+        <div class="margin-down-10 ios-list-margin">
+            <div class="posRelative padding-5 margin-vertical-5 margin-horizontal-10 bg-white border-down" ng-repeat="item in fb.data track by $index" >
+                <div class="bold width-10 col-10 text-center extraLink color-text border-right index">
+                    {{ $index + 1 }}
+                </div>
+                <div class="inline-block width-60 col-60 color-primary subHead padding-vertical padding-right list-text" ng-bind="item.title">
+                </div>
+                <div class="fb-download smallText text-right margin-left--3">
+                    <button target="_self" class="button bg-energized button-small" ng-click="fb.openImage(item.filetype);
+                            $ionicLoading.show();">
+                        Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </ion-list>
+</ion-content>

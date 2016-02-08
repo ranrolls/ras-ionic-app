@@ -1,0 +1,18 @@
+
+<div vertical-align="center-with-head" ng-swipe-right="lc.toggleLeft();" ng-swipe-left="lc.toggleLeft();">
+    <div class="list list-inset" id="center-child" ng-swipe-right="lc.toggleLeft();" ng-swipe-left="lc.toggleLeft();">
+        <div class="row">
+            <div class="col-50 col-offset-25 text-center">
+                <img class="width-100" src="./img/ras-app-image/login/restricted-access-icon.png" alt=""/>
+            </div>
+        </div>
+        <div class="row text-center">
+            <p class="subHead color-energized col" ng-bind="ac.message"></p>
+        </div>
+        <button
+            class="button button-block button-positive"
+            ng-click="ac.login()"
+            >
+            Login</button>
+    </div>
+</div>

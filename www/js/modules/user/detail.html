@@ -1,0 +1,101 @@
+<ion-content>
+    <ion-list
+        ng-swipe-right="lc.toggleLeft();"
+        ng-swipe-left="lc.toggleLeft();"
+        class="padding-vertical margin-vertical-10 user-profile">
+
+        <div class="row padding-vertical padding-top margin-vertical-10">
+            <div class="col-40 text-center" style="max-width: 40%;">
+                <div class="user-image-box">
+
+                    <img id="newImage" class="profile-image"
+                         ng-src="{{uc.cameraImg}}"
+                         src="{{uc.cameraImg}}"
+                         alt="{{uc.data.name}}" />
+
+                </div>
+            </div>
+            <div class="col-60">
+                <div class="row border-down">Welcome,&nbsp;
+                    <span class="color-primary extraLink">
+                        {{uc.data.name | capitalize}}
+                    </span>
+                </div>
+                <div class="row global-sprites editImg" ng-click="uc.takePicture();">
+                    <div class="col-100 width-100">
+                        Browse Image
+                    </div>
+                </div>
+                <button class="upButton button button-small button-positive"
+                        ng-disabled="uc.uploadDisable" ng-click="uc.uploadPicture();">
+                    Upload Image
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="list col">
+                <div class="row item item-divider">
+                    <div class="col-10 col-center global-sprites name">
+                    </div>
+                    <div class="col-90 padding-left padding-bottom">
+                        <span class="fontSize12 fontWeight500">Name</span><br />
+                        <span class="extraLink color-primary">{{uc.data.name | capitalize}}</span>
+                    </div>
+                </div>
+
+                <div class="row item">
+                    <div class="col-10 col-center global-sprites email">
+                    </div>
+                    <div class="col-90 padding-left padding-bottom">
+                        <span class="fontSize12 fontWeight500">Email</span><br />
+                        <span class="extraLink color-primary">{{uc.data.email}}</span>
+                    </div>
+                </div>
+
+                <div class="row item item-divider" ng-if="uc.data.phoneno.length > 1">
+                    <div class="col-10 col-center global-sprites phone">
+                    </div>
+                    <div class="col-90 padding-left padding-bottom">
+                        <span class="fontSize12 fontWeight500">Phone</span><br />
+                        <span class="extraLink color-primary">{{uc.data.phoneno}}</span>
+                    </div>
+                </div>
+
+                <div class="row item" ng-if="uc.data.location.length > 1">
+                    <div class="col-10 col-center global-sprites location">
+
+                    </div>
+                    <div class="col-90 padding-left padding-bottom">
+                        <span class="fontSize12 fontWeight500">Location</span><br />
+                        <span class="extraLink color-primary">{{uc.data.location}}</span>
+                    </div>
+                </div>
+
+                <div class="row item item-divider margin-0" ng-if="uc.data.personalText.length > 1">
+                    <div class="col-10 col-center global-sprites personal">
+                    </div>
+                    <div class="col-90 padding-left padding-bottom">
+                        <span class="fontSize12 fontWeight500">Personal Text</span><br />
+                        <span class="extraLink color-primary">{{uc.data.personalText}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="padding-10 ios-list-margin">
+            <div class="row row3 margin-10 padding-10">
+                <a class="padding-top padding-bottom col-100 display-block button-block button-positive text-center color-white"
+                   ui-sref="home.editProfile" style="text-decoration: none;" >
+                    Edit Profile
+                </a>
+            </div>
+            <div class="row row3 margin-vertical-10 padding-10 ios-list-margin">
+                <a class="padding-top padding-bottom col-100 display-block button-block button-positive text-center color-white ios-list-margin"
+                   style="text-decoration: none;" ng-click="uc.logout();" >
+                    Logout
+                </a>
+            </div>
+        </div>
+
+
+    </ion-list>
+</ion-content>

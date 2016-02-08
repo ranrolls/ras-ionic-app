@@ -1,0 +1,31 @@
+<ion-content lazy-scroll id="contentDiv" ng-swipe-right="lc.toggleLeft();" ng-swipe-left="lc.toggleLeft();">
+  <ion-list ng-class="{'margin-vertical-10' : !ac.fetchOperation}">
+    <div class="row articleList" ng-swipe-right="lc.toggleLeft();" ng-swipe-left="lc.toggleLeft();">
+      <div id="scrollList" class="list col" delegate-handle="mainScroll">
+        <!-- id="{{'item-'+$index}}" -->
+        <a id="{{'item-'+$index}}" class="item item-text-wrap col-100 margin-vertical-10" ng-repeat="item in ac.data track by $index" repeat-href repeat-href-value="{{item.cid}}" repeat-href-prefix="#/home/articled/">
+
+          <div class="row text-center margin-down-10">
+            <img ng-src="{{item.urlc}}" class="col-100 width100 margin-down-10" alt="{{item.title}}" />
+          </div>
+          <div class="row">
+            <span class="col-100 margin-vertical-10 line-height-20 bold color-primary fontSize20" ng-bind="item.title_short"></span>
+          </div>
+
+          <div class="row">
+            <span class="col-100 line-height-20 margin-vertical-15 fontSize16" ng-bind="item.introtext_short"></span>
+          </div>
+          <div class="row">
+            <span class="icon ion-ios-clock-outline margin-0 "></span>
+            <span class="col-90 fontSize12 dateCreated" ng-bind="item.created"></span>
+          </div>
+        </a>
+
+        <ion-infinite-scroll ng-if="ac.fetchOperation" ng-hide="" on-infinite="ac.loadMore()" distance="30%">
+        </ion-infinite-scroll>
+
+      </div>
+    </div>
+  </ion-list>
+
+</ion-content>

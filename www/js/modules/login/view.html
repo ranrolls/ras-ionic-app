@@ -1,0 +1,42 @@
+<ion-content>
+    <ion-list>
+        <div>
+            <div class="border-down padding-top">
+                <h3 class="subHead color-primary padding-horizontal">Login</h3>
+            </div>
+            <form class="list list-inset loginForm margin-0 padding-10" name="form" ng-submit="lc.login(form);" novalidate>
+                <div class="row padding-0 margin-vertical-5">
+                    <label class="item item-input col">
+                        <input value="" ng-model="lc.un" type="text" placeholder="Username" required minlength="">
+                    </label>
+                </div>
+                <div class="row padding-0 margin-vertical-5">
+                    <label class="item item-input col">
+                        <input value="" ng-model="lc.p" type="password" placeholder="Password" required minlength="4" >
+                    </label>
+                </div>
+                <div class="row padding-0 margin-vertical-10">
+                    <button class="button button-block button-positive" type="submit" ng-disabled="form.$invalid || !form.$dirty">
+                        Login
+                    </button>
+                </div>
+
+                <div class="row padding-0">
+                    <div class="col padding-top">
+                        Forgot your <span class="extraLink color-primary" ui-sref="home.password">password?</span>
+                    </div>
+                </div>
+                <div class="row padding-0">
+                    <div class="col padding-top">
+                        Forgot your <span class="extraLink color-primary" ui-sref="home.username">username?</span>
+                    </div>
+                </div>
+                <div class="row padding-0">
+                    <div class="col padding-top">
+                        New User, <span ui-sref="home.register" class="extraBigLink color-energized" ui-sref="home.register">Create an account</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </ion-list>
+</ion-content>

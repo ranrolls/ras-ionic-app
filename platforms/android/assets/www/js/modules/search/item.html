@@ -1,0 +1,14 @@
+<ion-content>
+  <ion-list class="padding-vertical margin-vertical-10">
+    <div class="">
+      <div class="border-down padding-top">
+        <h3 class="subHead color-primary padding-horizontal" ng-bind="dc.data.title"></h3>
+      </div>
+      <img class="width100 padding-10" ng-if="dc.data.urlc" image-lazy-src="{{dc.data.urlc}}" alt="{{dc.data.title}}" />
+      <div class="padding-10 margin-vertical-10 line-height-20 fontSize16 div-image-100" parse-html-links ng-bind="dc.data.introtext">
+      </div>
+      <div class="padding-10 margin-vertical-10 line-height-20 fontSize16" parse-html-links ng-bind="dc.data.fulltext">
+      </div>
+    </div>
+  </ion-list>
+</ion-content>

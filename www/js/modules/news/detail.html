@@ -1,0 +1,23 @@
+<ion-content>
+    <ion-list class="padding-vertical margin-vertical-10">
+        <div class="border-down padding-top">
+            <h3 class="subHead color-primary padding-horizontal" ng-bind="ndc.news.title"></h3>
+        </div>
+        <div class="row">
+            <div class="col-100 border-down">
+                <span class="margin-vertical-10">
+                    <span class="icon ion-ios-clock-outline"></span>
+                    <span ng-bind="ndc.news.created">
+                    </span>
+                </span>
+
+            </div>
+        </div>
+        <div class="padding-10 margin-vertical-10 fontSize16" parse-html-links-ndc>
+            {{ndc.news.introtext}}
+        </div>
+        <div class="padding-10 margin-vertical-10 fontSize16" parse-html-links-ndc>
+            {{ndc.news.fulltext}}
+        </div>
+    </ion-list>
+</ion-content>

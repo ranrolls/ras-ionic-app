@@ -1,0 +1,12 @@
+
+<ion-content>
+    <ion-list>
+
+        <div class="list directoryViewList margin-horizontal-10 ios-list-margin">
+            <h3 class="color-primary subHead padding-top" ng-bind="sc.title"></h3>
+            <a class="item item-text-wrap col-95 col-offset-5" ng-repeat="item in sc.subCategoryList" repeat-href repeat-href-value="{{item.listing_id}}" repeat-href-prefix="#/home/directoryd/">
+                <h4 class="col padding-0 color-primary subHead fontSize18" ng-bind="item.title"></h4>
+            </a>
+        </div>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,48 @@
+
+<ion-content>
+    <ion-list>
+        <div class="row news-list">
+            <div class="list width-100">
+                <a class="item item-thumbnail-left item-text-wrap col-95 col-offset-5" ng-repeat="item in bc.subCategoryList" repeat-href repeat-href-value="{{item.cid}}" repeat-href-prefix="#/home/blogd/">
+                    <img class="width100" ng-src="{{item.image}}" alt="{{item.title}}"/>
+                    <h3 class="col color-primary padding-0 bold" ng-bind="item.title">
+                        <!--
+                            Lorem ipsum ! Lorem ipsum ! t g Lorem ipsum
+                        -->
+                    </h3>
+                    <div class="smallText padding-vertical">
+                        <i class="icon ion-person color-primary"></i>By <span class="color-energized">Super User</span> <i class="icon color-primary ion-ios-calendar-outline"></i> 
+                        <span ng-bind="item.created">
+                            <!--
+                                11 April 2015
+                            -->
+                        </span><br />
+                        <span>Read More</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </ion-list>
+    <!--
+        <ion-infinite-scroll
+            on-infinite="bc.loadMore()"
+            distance="5%">
+        </ion-infinite-scroll>
+    -->
+</ion-content> 
+
+<!--
+
+<ion-content ng-controller="MyController">
+  <ion-list>
+  ....
+  ....
+  </ion-list>
+
+  <ion-infinite-scroll
+    on-infinite="loadMore()"
+    distance="1%">
+  </ion-infinite-scroll>
+</ion-content>
+
+-->

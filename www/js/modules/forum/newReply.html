@@ -1,0 +1,40 @@
+
+<ion-content class="forumTopicList forumTopicReply">
+    <ion-list>
+        <div class="border-down padding-top">
+            <h3 class="subHead color-primary padding-horizontal">Reply Topic</h3>
+        </div>
+        <form class="list list-inset loginForm margin-0 padding-10" name="form" ng-submit="rc.replyTopic();" novalidate>
+            <div class="row padding-0 margin-vertical-5">
+                <div class="col subHead color-primary">
+                    Subject
+                </div>
+            </div>
+
+            <div class="row padding-0 margin-vertical-5">
+                <div class="item item-input col">
+                    <input class="width-100 padding-5" readonly="readonly" ng-model="rc.subject" name="subject" type="text" required minlenght="3" />
+                </div>
+            </div>
+
+            <div class="row padding-0 margin-vertical-5">
+                <div class="col subHead color-primary">
+                    Message
+                </div>
+            </div>
+
+            <div class="row padding-0 margin-vertical-5">
+                <div class="item item-input col">
+                    <textarea class="width-100 padding-5" rows="7" ng-model="rc.message" type="text" name="message" required minlenght="6"></textarea>
+                </div>
+            </div>
+
+            <div class="row padding-0 margin-vertical-5">
+                <button class="button button-block button-positive" ng-disabled="form.$invalid || !form.$dirty" type="submit">
+                    Reply Topic
+                </button>
+            </div>
+
+        </form>
+    </ion-list>
+</ion-content>

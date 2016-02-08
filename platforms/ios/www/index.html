@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--<meta name="viewport" content="initial-scale=1, user-scalable=no, width=device-width">-->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=medium-dpi" />
+        <meta name="format-detection" content="telephone=no">
+
+        <title>Ras :: Refine Interactive</title>
+
+        <link rel="stylesheet" type="text/css" href="lib/ionic/css/ionic.min.css" />
+        <link rel="stylesheet" type="text/css" href="lib/angular-toastr/dist/angular-toastr.min.css" />
+        <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css" />
+
+    <!-- compiled css output -->
+        <link rel="stylesheet" type="text/css" href="css/ionic.app.css" />
+        <link rel="stylesheet" type="text/css" href="css/ionicEdits.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="http://www.rasmentorshipforum.com/templates/lan_grant/css/web-global.css" />
+
+    </head>
+    <body ng-app="root" class="platform-ios platform-cordova platform-webview">
+        <div class="container stable-bg">
+            <div ui-view></div>
+        </div>
+
+        <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+
+        <!-- ionic/angularjs js -->
+<!--
+        <script type="text/javascript" src="lib/ionic/release/js/ionic.bundle.min.js"></script>
+        -->
+
+        <script type="text/javascript" src="lib/ionic/js/ionic.bundle.min.js"></script>
+        <script type="text/javascript" src="lib/angular-preload-image/angular-preload-image.min.js"></script>
+
+        <!-- cordova script (this will be a 404 during development) -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="cordova_plugins.js"></script>
+
+
+        <!-- bower libs -->
+        <script type="text/javascript" src="lib/lodash/lodash.min.js"></script>
+        <script type="text/javascript" src="lib/hammerjs/hammer.js"></script>
+        <script type="text/javascript" src="lib/angular-toastr/dist/angular-toastr.tpls.min.js"></script>
+        <script type="text/javascript" src="lib/angular-resource/angular-resource.min.js"></script>
+
+        <!--
+        <script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+        -->
+
+        <script type="text/javascript" src="lib/angular-ui-router/release/angular-ui-router-e.js"></script>
+        <script type="text/javascript" src="lib/angular-cache/dist/angular-cache.js"></script>
+
+        <!--
+                <script type="text/javascript" src="lib/angular-native-picker/build/angular-datepicker.js"></script>
+        -->
+
+        <script type="text/javascript" src="lib/angular-animate/angular-animate.min.js"></script>
+        <script type="text/javascript" src="lib/angular-sanitize/angular-sanitize.min.js"></script>
+
+
+<!--
+        <script type="text/javascript" src="lib/angular-vs-repeat/src/angular-vs-repeat.min.js"></script>
+        <script type="text/javascript" src="lib/ryanmullins-angular-hammer/angular.hammer.min.js"></script>
+-->
+
+        <script type="text/javascript" src="lib/angular-gestures/gestures.min.js"></script>
+
+
+        <script type="text/javascript" src="lib/angular-touch/angular-touch.min.js"></script>
+          <!--
+        -->
+<!--
+        <script type="text/javascript" src="lib/jquery-appear/build/jquery.appear.min.js"></script>
+        -->
+
+        <script type="text/javascript" src="lib/ion-image-lazy-load/ionic-image-lazy-load.js"></script>
+
+<!--
+        <script type="text/javascript" src="lib/df-visible/jquery.visible.min.js"></script>
+        <script type="text/javascript" src="lib/angular-appear-master/external/jquery.appear.min.js"></script>
+        <script type="text/javascript" src="lib/angular-appear-master/build/angular-appear.min.js"></script>
+        -->
+
+        <script type="text/javascript" src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+
+        <!--
+        <script type="text/javascript" src="lib/showdown/dist/showdown.min.js"></script>
+        -->
+
+        <!-- your app's js -->
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/configuration.js"></script>
+
+        <!-- cordova services -->
+
+        <!-- modules -->
+        <script type="text/javascript" src="js/modules/splash/config.js"></script>
+        <script type="text/javascript" src="js/modules/home/config.js"></script>
+        <script type="text/javascript" src="js/modules/home/ctrl.js"></script>
+        <script type="text/javascript" src="js/modules/home/rootCtrl.js"></script>
+        <script type="text/javascript" src="js/modules/home/rootIosCtrl.js"></script>
+        <script type="text/javascript" src="js/modules/home/aboutCtrl.js"></script>
+
+        <script type="text/javascript" src="js/modules/about/config.js"></script>
+        <script type="text/javascript" src="js/modules/about/ctrl.js"></script>
+
+        <script type="text/javascript" src="js/modules/login/config.js"></script>
+        <script type="text/javascript" src="js/modules/login/ctrl.js"></script>
+        <script type="text/javascript" src="js/modules/login/accessCtrl.js"></script>
+
+        <script type="text/javascript" src="js/modules/register/config.js"></script>
+        <script type="text/javascript" src="js/modules/register/ctrl.js"></script>
+
+        <script type="text/javascript" src="js/modules/user/config.js"></script>
+        <script type="text/javascript" src="js/modules/user/ctrl.js"></script>
+        <script type="text/javascript" src="js/modules/user/passwordCtrl.js"></script>
+
+        <script type="text/javascript" src="js/modules/contact-us/config.js"></script>
+        <script type="text/javascript" src="js/modules/contact-us/ctrl.js"></script>
+
+        <script type="text/javascript" src="js/modules/news/config.js"></script>
+        <script type="text/javascript" src="js/modules/news/ctrl.js"></script>
+        <script type="text/javascript" src="js/modules/news/detailCtrl.js"></script>
+
+        <script type="text/javascript" src="js/modules/forum/config.js"></script>
+        <script type="text/javascript" src="js/modules/forum/catCtrl.js"></script>
+        <script type="text/javascript" src="js/modules/forum/subcatCtrl.js"></script>
+        <script type="text/javascript" src="js/modules/forum/topicCtrl.js"></script>
+        <script type="text/javascript" src="js/modules/forum/replyCtrl.js"></script>
+
+        <script type="text/javascript" src="js/modules/article/config.js"></script>
+        <script type="text/javascript" src="js/modules/article/ctrl.js"></script>
+        <script type="text/javascript" src="js/modules/article/detailCtrl.js"></script>
+
+        <script type="text/javascript" src="js/modules/fb/config.js"></script>
+        <script type="text/javascript" src="js/modules/fb/ctrl.js"></script>
+        <script type="text/javascript" src="js/modules/fb/fbtestCtrl.js"></script>
+
+        <script type="text/javascript" src="js/modules/directory/config.js"></script>
+        <script type="text/javascript" src="js/modules/directory/categoryCtrl.js"></script>
+        <script type="text/javascript" src="js/modules/directory/subcatCtrl.js"></script>
+        <script type="text/javascript" src="js/modules/directory/detailCtrl.js"></script>
+
+        <script type="text/javascript" src="js/modules/blog/config.js"></script>
+        <script type="text/javascript" src="js/modules/blog/ctrl.js"></script>
+
+        <script type="text/javascript" src="js/modules/search/config.js"></script>
+        <script type="text/javascript" src="js/modules/search/catCtrl.js"></script>
+        <script type="text/javascript" src="js/modules/search/listCtrl.js"></script>
+        <script type="text/javascript" src="js/modules/search/itemCtrl.js"></script>
+
+        <!-- services -->
+        <script type="text/javascript" src="js/directives/directives.js"></script>
+        <script type="text/javascript" src="js/directives/filters.js"></script>
+
+        <script type="text/javascript" src="js/services/cordova.services.js"></script>
+        <script type="text/javascript" src="js/services/common.services.js"></script>
+
+        <script type="text/javascript" src="js/services/global-settings.js"></script>
+        <script type="text/javascript" src="js/services/globalUrl.js"></script>
+        <script type="text/javascript" src="js/services/globalData.js"></script>
+        <script type="text/javascript" src="js/services/globalVariables.js"></script>
+
+
+        <script type="text/javascript" src="js/services/user.js"></script>
+        <script type="text/javascript" src="js/services/news.js"></script>
+        <script type="text/javascript" src="js/services/forum.js"></script>
+        <script type="text/javascript" src="js/services/articles.js"></script>
+        <script type="text/javascript" src="js/services/directory.js"></script>
+
+        <script type="text/javascript" src="js/plugs/custom.js"></script>
+
+
+    </body>
+</html>

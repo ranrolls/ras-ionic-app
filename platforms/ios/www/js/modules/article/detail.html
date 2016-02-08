@@ -1,0 +1,23 @@
+<ion-content>
+    <ion-list class="padding-vertical margin-vertical-10">
+
+        <div class="border-down padding-top">
+            <h3 class="subHead color-primary padding-horizontal" ng-bind="adc.data.title"></h3>
+        </div>
+
+        <div class="row">
+            <div class="col-100 border-down">
+                <span class="margin-vertical-10">
+                    <span class="icon ion-ios-clock-outline"></span>
+                    <span ng-bind="adc.data.created"></span>
+                </span>
+            </div>
+        </div>
+<div class="padding-10 margin-vertical-10 line-height-20 fontSize16 div-image-100" parse-html-links-adc ng-bind="adc.data.introtext">
+        </div>
+
+        <div class="padding-10 margin-vertical-10 line-height-20 fontSize16" parse-html-links-adc ng-bind="adc.data.fulltext">
+        </div>
+
+    </ion-list>
+</ion-content>
